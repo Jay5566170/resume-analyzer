@@ -6,3 +6,6 @@ PyPDF2
 openai
 python-dotenv
 psycopg2-binary
+PyPDF2
+openai
+python-dotenv
