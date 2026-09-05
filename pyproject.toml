@@ -1,7 +1,10 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "resume-analyzer"
 version = "1.0.0"
-requires-python = ">=3.11,<3.12"
 dependencies = [
     "fastapi",
     "uvicorn",
@@ -12,6 +15,5 @@ dependencies = [
     "google-generativeai",
 ]
 
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+[tool.setuptools]
+packages = []
