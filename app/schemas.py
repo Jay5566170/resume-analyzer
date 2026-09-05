@@ -8,8 +8,9 @@ class ResumeBase(BaseModel):
 class ResumeCreate(ResumeBase):
     pass
 
-class ResumeResponse(ResumeBase):
+class ResumeResponse(BaseModel):
     id: int
+    filename: str
     name: Optional[str] = None
     email: Optional[str] = None
     phone: Optional[str] = None
@@ -21,4 +22,4 @@ class ResumeResponse(ResumeBase):
     updated_at: datetime
     
     class Config:
-        orm_mode = True
+        from_attributes = True  # ✅ FIXED (was orm_mode)
