@@ -3,7 +3,5 @@ uvicorn
 sqlalchemy
 python-multipart
 PyPDF2
-openai
 python-dotenv
-psycopg2-binary
-
+google-generativeai
