@@ -1,0 +1,12 @@
+[project]
+name = "resume-analyzer"
+version = "1.0.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "sqlalchemy",
+    "python-multipart",
+    "PyPDF2",
+    "python-dotenv",
+    "google-generativeai",
+]
